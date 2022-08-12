@@ -109,7 +109,7 @@ module.exports = {
       },
       mumbai: {
         ...sharedNetworkConfig,
-        url: "https://data-seed-prebsc-2-s2.binance.org:8545/",
+        url: "https://rpc-mumbai.maticvigil.com/",
         chainId: 80001,
         gasPrice: GAS_PRICE_GWEI
           ? parseInt(

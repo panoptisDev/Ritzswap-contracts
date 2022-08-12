@@ -238,6 +238,7 @@ module.exports = {
   },
   etherscan: {
     apiKey: MY_BSCSCAN_API_KEY,
+    apiKey: MY_POLYGONSCAN_API_KEY
   },
   contractSizer: {
     alphaSort: true,

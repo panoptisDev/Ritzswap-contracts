@@ -23,6 +23,7 @@ const {
   MNEMONIC,
   MY_ETHERSCAN_API_KEY,
   MY_BSCSCAN_API_KEY,
+  MY_POLYGONSCAN_API_KEY,
   PK,
 } = process.env;
 
@@ -105,7 +106,17 @@ module.exports = {
             utils.parseUnits(GAS_PRICE_GWEI.toString(), "gwei").toString()
           )
         : "auto",
-    },
+      },
+      mumbai: {
+        ...sharedNetworkConfig,
+        url: "https://data-seed-prebsc-2-s2.binance.org:8545/",
+        chainId: 80001,
+        gasPrice: GAS_PRICE_GWEI
+          ? parseInt(
+              utils.parseUnits(GAS_PRICE_GWEI.toString(), "gwei").toString()
+            )
+          : "auto",
+      },
     binancesmartchain: {
       ...sharedNetworkConfig,
       url: "https://bsc-dataseed1.binance.org/",

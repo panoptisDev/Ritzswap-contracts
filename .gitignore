@@ -3,3 +3,4 @@ cache/
 artifacts/
 deployments/
 package-lock.json
+.env
